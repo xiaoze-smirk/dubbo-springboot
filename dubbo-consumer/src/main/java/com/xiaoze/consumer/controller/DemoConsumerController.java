@@ -13,7 +13,8 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class DemoConsumerController {
 
-    @Reference(application = "${dubbo.application.id}",
+    @Reference(version = "${demo.service.version}",
+            application = "${dubbo.application.id}",
             url = "dubbo://localhost:20880")
     private DemoService demoService;
 

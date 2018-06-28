@@ -7,7 +7,7 @@ import com.xiaoze.api.service.DemoService;
  * @author xiaoze
  * @date 2018/6/7
  */
-@Service(
+@Service(version = "${demo.service.version}",
         application = "${dubbo.application.id}",
         protocol = "${dubbo.protocol.id}",
         registry = "${dubbo.registry.id}"
