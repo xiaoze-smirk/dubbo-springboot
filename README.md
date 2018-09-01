@@ -24,7 +24,7 @@ Dubbo是阿里巴巴公司开源的一个高性能优秀的服务框架，使得
 
 **2.配置application.properties**
 
-![application.properties配置](http://wx3.sinaimg.cn/large/cf495cdcgy1fss1sbppzrj20z00izdi0.jpg)
+![application.properties配置](http://wx3.sinaimg.cn/large/cf495cdcly1fuu28gq1jqj20zi0htjsv.jpg)
 
 这边用到的注册中心是zookeeper，当然你也可以用其他注册中心，你可以查看[Dubbo管理手册(中文)](http://dubbo.apache.org/books/dubbo-admin-book/)，里面有其他注册中心使用方法。其他一些配置可以去官网查看，这边就不在多说。
 
@@ -32,17 +32,17 @@ Dubbo是阿里巴巴公司开源的一个高性能优秀的服务框架，使得
 
 **共同Api：**
 
-![Dubbo服务提供者](http://wx2.sinaimg.cn/large/cf495cdcgy1fss26s3zioj20tc0fwgmj.jpg)
+![Dubbo服务提供者](http://wx2.sinaimg.cn/large/cf495cdcly1fuu28fumilj20uv0hq0u4.jpg)
 
 这是服务提供者和消费者共同调用的接口。
 
 **服务提供者：**
-![Dubbo服务提供者](http://wx3.sinaimg.cn/large/cf495cdcgy1fss22hifkmj211g0huq4r.jpg)
+![Dubbo服务提供者](http://wx2.sinaimg.cn/large/cf495cdcly1fuu28gcb56j213i0j4gnh.jpg)
 
 简单来说就是将上面接口的实现方法（称之为服用）注册到zookeeper上，并暴露端口供其他消费者消费。@Service里面的一些信息就是服务具体的注册地址。
 
 **服务消费者：**
-![Dubbo服务消费者](http://wx3.sinaimg.cn/large/cf495cdcgy1fss22i1jcwj20va0gzdhk.jpg)
+![Dubbo服务消费者](http://wx1.sinaimg.cn/large/cf495cdcly1fuu28h1ke4j216i0jk0uu.jpg)
 
 如上@Reference的直接表示远程调用，里面最重要的是url，表示要调用的地址，也就是上面服务暴露的地址。
 
